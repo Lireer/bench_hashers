@@ -1,0 +1,23 @@
+[package]
+name = "bench_hashers"
+version = "0.1.0"
+authors = ["Carl Scherer"]
+edition = "2018"
+
+[dependencies]
+
+[dev-dependencies]
+ahash = "0.6.2"
+criterion = "0.3.3"
+fnv = "1.0.7"
+fxhash = "0.2.1"
+highway = "0.6.3"
+metrohash = "1.0.6"
+rand = "0.8.2"
+rand_pcg = "0.3.0"
+twox-hash = "1.6.0"
+
+
+[[bench]]
+name = "benchmarks"
+harness = false
